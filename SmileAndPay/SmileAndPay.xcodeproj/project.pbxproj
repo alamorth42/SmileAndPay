@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D58532E2860C4930050286F /* SmileAndPayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853062860C4920050286F /* SmileAndPayApp.swift */; };
+		5D5853302860C4930050286F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853072860C4920050286F /* MainView.swift */; };
+		5D5853322860C4930050286F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5853082860C4930050286F /* Assets.xcassets */; };
+		5D5853432860C4BC0050286F /* exemple_transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D5853422860C4BC0050286F /* exemple_transactions.json */; };
+		5D58534A2860E5840050286F /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853492860E5840050286F /* TransactionModel.swift */; };
+		5D58534E2860E5CC0050286F /* SmileAndPayButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D58534D2860E5CC0050286F /* SmileAndPayButtons.swift */; };
+		5D5853522860E5FD0050286F /* RecapViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853512860E5FD0050286F /* RecapViews.swift */; };
+		5D5853562860E6230050286F /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853552860E6230050286F /* TransactionsView.swift */; };
+		5D5853592860E63B0050286F /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853582860E63B0050286F /* CustomNavBar.swift */; };
+		5D5853602860E67A0050286F /* TransactionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D58535F2860E67A0050286F /* TransactionRowView.swift */; };
+		5D5853642860E69B0050286F /* TransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853632860E69B0050286F /* TransactionDetailsView.swift */; };
+		5D5853672860E6C40050286F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853662860E6C40050286F /* MainViewModel.swift */; };
+		5D58536B2860E6FA0050286F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D58536A2860E6FA0050286F /* MenuView.swift */; };
+		5D5853702860E7E10050286F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D58536F2860E7E10050286F /* Strings.swift */; };
+		5D5853742860E8D50050286F /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853732860E8D50050286F /* Style.swift */; };
+		5D5853772860FAC40050286F /* TransactionFIltersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853762860FAC40050286F /* TransactionFIltersButton.swift */; };
+		5D58538B2861037F0050286F /* SmileAndPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D58538A2861037F0050286F /* SmileAndPayTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D58538C2861037F0050286F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D5853012860C4910050286F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D58530C2860C4930050286F;
+			remoteInfo = "SmileAndPay (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D5853062860C4920050286F /* SmileAndPayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileAndPayApp.swift; sourceTree = "<group>"; };
+		5D5853072860C4920050286F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5D5853082860C4930050286F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D58530D2860C4930050286F /* SmileAndPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileAndPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5853422860C4BC0050286F /* exemple_transactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exemple_transactions.json; sourceTree = "<group>"; };
+		5D5853492860E5840050286F /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		5D58534D2860E5CC0050286F /* SmileAndPayButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileAndPayButtons.swift; sourceTree = "<group>"; };
+		5D5853512860E5FD0050286F /* RecapViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapViews.swift; sourceTree = "<group>"; };
+		5D5853552860E6230050286F /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		5D5853582860E63B0050286F /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
+		5D58535F2860E67A0050286F /* TransactionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRowView.swift; sourceTree = "<group>"; };
+		5D5853632860E69B0050286F /* TransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsView.swift; sourceTree = "<group>"; };
+		5D5853662860E6C40050286F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		5D58536A2860E6FA0050286F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		5D58536F2860E7E10050286F /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		5D5853732860E8D50050286F /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		5D5853762860FAC40050286F /* TransactionFIltersButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFIltersButton.swift; sourceTree = "<group>"; };
+		5D5853882861037F0050286F /* SmileAndPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileAndPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D58538A2861037F0050286F /* SmileAndPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileAndPayTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D58530A2860C4930050286F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5853852861037F0050286F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D5853002860C4910050286F = {
+			isa = PBXGroup;
+			children = (
+				5D5853052860C4920050286F /* Shared */,
+				5D5853892861037F0050286F /* SmileAndPayTests */,
+				5D58530E2860C4930050286F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D5853052860C4920050286F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853722860E8C30050286F /* SmileAndPayStyle */,
+				5D58536E2860E7D70050286F /* Strings */,
+				5D58536D2860E77F0050286F /* FakeData */,
+				5D58534C2860E5B80050286F /* SmileAndPayKit */,
+				5D5853482860E5760050286F /* Models */,
+				5D5853472860E56F0050286F /* ViewModels */,
+				5D5853462860E5620050286F /* Views */,
+				5D5853452860E5560050286F /* Delegate */,
+				5D5853082860C4930050286F /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5D58530E2860C4930050286F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D58530D2860C4930050286F /* SmileAndPay.app */,
+				5D5853882861037F0050286F /* SmileAndPayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D5853452860E5560050286F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853062860C4920050286F /* SmileAndPayApp.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		5D5853462860E5620050286F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853692860E6ED0050286F /* Menu */,
+				5D58535B2860E6520050286F /* MainView */,
+				5D5853542860E6110050286F /* TransactionsViews */,
+				5D5853502860E5F10050286F /* RecapViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D5853472860E56F0050286F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853662860E6C40050286F /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5D5853482860E5760050286F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853492860E5840050286F /* TransactionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D58534C2860E5B80050286F /* SmileAndPayKit */ = {
+			isa = PBXGroup;
+			children = (
+				5D58534D2860E5CC0050286F /* SmileAndPayButtons.swift */,
+				5D5853582860E63B0050286F /* CustomNavBar.swift */,
+			);
+			path = SmileAndPayKit;
+			sourceTree = "<group>";
+		};
+		5D5853502860E5F10050286F /* RecapViews */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853512860E5FD0050286F /* RecapViews.swift */,
+			);
+			path = RecapViews;
+			sourceTree = "<group>";
+		};
+		5D5853542860E6110050286F /* TransactionsViews */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853552860E6230050286F /* TransactionsView.swift */,
+				5D58535F2860E67A0050286F /* TransactionRowView.swift */,
+				5D5853762860FAC40050286F /* TransactionFIltersButton.swift */,
+				5D5853622860E68B0050286F /* TransactionDetailsView */,
+			);
+			path = TransactionsViews;
+			sourceTree = "<group>";
+		};
+		5D58535B2860E6520050286F /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853072860C4920050286F /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		5D5853622860E68B0050286F /* TransactionDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853632860E69B0050286F /* TransactionDetailsView.swift */,
+			);
+			path = TransactionDetailsView;
+			sourceTree = "<group>";
+		};
+		5D5853692860E6ED0050286F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5D58536A2860E6FA0050286F /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		5D58536D2860E77F0050286F /* FakeData */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853422860C4BC0050286F /* exemple_transactions.json */,
+			);
+			path = FakeData;
+			sourceTree = "<group>";
+		};
+		5D58536E2860E7D70050286F /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				5D58536F2860E7E10050286F /* Strings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		5D5853722860E8C30050286F /* SmileAndPayStyle */ = {
+			isa = PBXGroup;
+			children = (
+				5D5853732860E8D50050286F /* Style.swift */,
+			);
+			path = SmileAndPayStyle;
+			sourceTree = "<group>";
+		};
+		5D5853892861037F0050286F /* SmileAndPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D58538A2861037F0050286F /* SmileAndPayTests.swift */,
+			);
+			path = SmileAndPayTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D58530C2860C4930050286F /* SmileAndPay (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D5853362860C4930050286F /* Build configuration list for PBXNativeTarget "SmileAndPay (iOS)" */;
+			buildPhases = (
+				5D5853092860C4930050286F /* Sources */,
+				5D58530A2860C4930050286F /* Frameworks */,
+				5D58530B2860C4930050286F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmileAndPay (iOS)";
+			productName = "SmileAndPay (iOS)";
+			productReference = 5D58530D2860C4930050286F /* SmileAndPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D5853872861037F0050286F /* SmileAndPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D58538E2861037F0050286F /* Build configuration list for PBXNativeTarget "SmileAndPayTests" */;
+			buildPhases = (
+				5D5853842861037F0050286F /* Sources */,
+				5D5853852861037F0050286F /* Frameworks */,
+				5D5853862861037F0050286F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D58538D2861037F0050286F /* PBXTargetDependency */,
+			);
+			name = SmileAndPayTests;
+			productName = SmileAndPayTests;
+			productReference = 5D5853882861037F0050286F /* SmileAndPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D5853012860C4910050286F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					5D58530C2860C4930050286F = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					5D5853872861037F0050286F = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 5D58530C2860C4930050286F;
+					};
+				};
+			};
+			buildConfigurationList = 5D5853042860C4910050286F /* Build configuration list for PBXProject "SmileAndPay" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D5853002860C4910050286F;
+			productRefGroup = 5D58530E2860C4930050286F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D58530C2860C4930050286F /* SmileAndPay (iOS) */,
+				5D5853872861037F0050286F /* SmileAndPayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D58530B2860C4930050286F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D5853322860C4930050286F /* Assets.xcassets in Resources */,
+				5D5853432860C4BC0050286F /* exemple_transactions.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5853862861037F0050286F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D5853092860C4930050286F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D58534A2860E5840050286F /* TransactionModel.swift in Sources */,
+				5D58534E2860E5CC0050286F /* SmileAndPayButtons.swift in Sources */,
+				5D5853522860E5FD0050286F /* RecapViews.swift in Sources */,
+				5D5853642860E69B0050286F /* TransactionDetailsView.swift in Sources */,
+				5D5853302860C4930050286F /* MainView.swift in Sources */,
+				5D5853742860E8D50050286F /* Style.swift in Sources */,
+				5D5853672860E6C40050286F /* MainViewModel.swift in Sources */,
+				5D5853602860E67A0050286F /* TransactionRowView.swift in Sources */,
+				5D58532E2860C4930050286F /* SmileAndPayApp.swift in Sources */,
+				5D5853562860E6230050286F /* TransactionsView.swift in Sources */,
+				5D5853772860FAC40050286F /* TransactionFIltersButton.swift in Sources */,
+				5D58536B2860E6FA0050286F /* MenuView.swift in Sources */,
+				5D5853702860E7E10050286F /* Strings.swift in Sources */,
+				5D5853592860E63B0050286F /* CustomNavBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5853842861037F0050286F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D58538B2861037F0050286F /* SmileAndPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D58538D2861037F0050286F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D58530C2860C4930050286F /* SmileAndPay (iOS) */;
+			targetProxy = 5D58538C2861037F0050286F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D5853342860C4930050286F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D5853352860C4930050286F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5D5853372860C4930050286F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Achille.SmileAndPay;
+				PRODUCT_NAME = SmileAndPay;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D5853382860C4930050286F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Achille.SmileAndPay;
+				PRODUCT_NAME = SmileAndPay;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D58538F2861037F0050286F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Achille.SmileAndPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmileAndPay.app/SmileAndPay";
+			};
+			name = Debug;
+		};
+		5D5853902861037F0050286F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Achille.SmileAndPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmileAndPay.app/SmileAndPay";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D5853042860C4910050286F /* Build configuration list for PBXProject "SmileAndPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D5853342860C4930050286F /* Debug */,
+				5D5853352860C4930050286F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D5853362860C4930050286F /* Build configuration list for PBXNativeTarget "SmileAndPay (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D5853372860C4930050286F /* Debug */,
+				5D5853382860C4930050286F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D58538E2861037F0050286F /* Build configuration list for PBXNativeTarget "SmileAndPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D58538F2861037F0050286F /* Debug */,
+				5D5853902861037F0050286F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D5853012860C4910050286F /* Project object */;
+}
