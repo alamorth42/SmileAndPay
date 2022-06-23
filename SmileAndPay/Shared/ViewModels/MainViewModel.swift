@@ -9,7 +9,8 @@ import SwiftUI
 
 class MainViewModel: ObservableObject {
     @Published var transactions: [Transaction] = []
-    
+    @Published var showTabBar = true
+        
     func onAppearViewModel() {
         guard let data = readLocalFile(forName: "exemple_transactions") else { return }
         let transactions = parse(jsonData: data)

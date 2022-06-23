@@ -9,14 +9,10 @@ import SwiftUI
 
 struct TransactionsView: View {
     @ObservedObject var viewModel: MainViewModel
-    let action: ()->Void
         
     var body: some View {
         NavigationView {
             VStack {
-                CustomNavBar(title: Strings.transactionsTitle) {
-                    action()
-                }
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         TransactionsFiltersButton(title: "Amount") {
@@ -34,8 +30,13 @@ struct TransactionsView: View {
                 ScrollView(showsIndicators: false) {
                     ForEach(viewModel.transactions) { transaction in
                         NavigationLink(destination: {
-                            TransactionDetailsView(transaction: transaction) {
+                            TransactionDetailsView(transaction: transaction, actionBack: actionBack) {
                                 deleteRow(transaction)
+                            }
+                            .onAppear {
+                                withAnimation {
+                                    viewModel.showTabBar = false
+                                }
                             }
                         }, label: {
                             TransactionRow(transaction: transaction)
@@ -52,10 +53,17 @@ struct TransactionsView: View {
             .navigationBarHidden(true)
         }
         .edgesIgnoringSafeArea(.all)
-        .transition(.move(edge: .bottom))
+        .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))
+    }
+    
+    private func actionBack() {
+        withAnimation {
+            viewModel.showTabBar = true
+        }
     }
     
     private func deleteRow(_ transaction: Transaction) {
         viewModel.deleteTransaction(transaction)
+        actionBack()
     }
 }

@@ -12,21 +12,27 @@ struct CustomNavBar: View {
     let action: ()->Void
     
     var body: some View {
-        HStack {
-            Button {
-                action()
-            } label: {
-                Image(systemName: "arrow.left")
-                    .resizable()
-                    .foregroundColor(.black)
-                    .frame(width: 30, height: 20, alignment: .center)
+        ZStack {
+            HStack {
+                Button {
+                    action()
+                } label: {
+                    Image(systemName: "arrow.left")
+                        .resizable()
+                        .foregroundColor(.black)
+                        .frame(width: 30, height: 20, alignment: .center)
+                }
+                Spacer()
             }
-            Text(title.uppercased())
-                .foregroundColor(.blue)
-                .font(.title)
-                .bold()
-                .padding(.horizontal, 40)
-            Spacer()
+            HStack {
+                Spacer()
+                Text(title.uppercased())
+                    .foregroundColor(.blue)
+                    .font(.title)
+                    .bold()
+                    .padding(.horizontal, 80)
+                Spacer()
+            }
         }
     }
 }

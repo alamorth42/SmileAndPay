@@ -24,6 +24,13 @@
 		5D5853742860E8D50050286F /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853732860E8D50050286F /* Style.swift */; };
 		5D5853772860FAC40050286F /* TransactionFIltersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5853762860FAC40050286F /* TransactionFIltersButton.swift */; };
 		5D58538B2861037F0050286F /* SmileAndPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D58538A2861037F0050286F /* SmileAndPayTests.swift */; };
+		5DADDCB52864B0D400E17D07 /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5DADDCB42864B0D400E17D07 /* ComplexModule */; };
+		5DADDCB72864B0D400E17D07 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = 5DADDCB62864B0D400E17D07 /* Numerics */; };
+		5DADDCB92864B0D400E17D07 /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5DADDCB82864B0D400E17D07 /* RealModule */; };
+		5DADDCC12864B1BB00E17D07 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 5DADDCC02864B1BB00E17D07 /* Algorithms */; };
+		5DADDCC42864B25E00E17D07 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 5DADDCC32864B25E00E17D07 /* Charts */; };
+		5DADDCC72864B78100E17D07 /* PieChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DADDCC62864B78100E17D07 /* PieChartsView.swift */; };
+		5DADDCC92864B87100E17D07 /* PieChartSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DADDCC82864B87100E17D07 /* PieChartSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,19 @@
 			remoteInfo = "SmileAndPay (iOS)";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DADDCAF2864B09100E17D07 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5D5853062860C4920050286F /* SmileAndPayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileAndPayApp.swift; sourceTree = "<group>"; };
@@ -56,6 +76,8 @@
 		5D5853762860FAC40050286F /* TransactionFIltersButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFIltersButton.swift; sourceTree = "<group>"; };
 		5D5853882861037F0050286F /* SmileAndPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileAndPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D58538A2861037F0050286F /* SmileAndPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileAndPayTests.swift; sourceTree = "<group>"; };
+		5DADDCC62864B78100E17D07 /* PieChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartsView.swift; sourceTree = "<group>"; };
+		5DADDCC82864B87100E17D07 /* PieChartSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +85,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DADDCC42864B25E00E17D07 /* Charts in Frameworks */,
+				5DADDCC12864B1BB00E17D07 /* Algorithms in Frameworks */,
+				5DADDCB92864B0D400E17D07 /* RealModule in Frameworks */,
+				5DADDCB52864B0D400E17D07 /* ComplexModule in Frameworks */,
+				5DADDCB72864B0D400E17D07 /* Numerics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +109,14 @@
 				5D5853052860C4920050286F /* Shared */,
 				5D5853892861037F0050286F /* SmileAndPayTests */,
 				5D58530E2860C4930050286F /* Products */,
+				5DADDCBF2864B1BB00E17D07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		5D5853052860C4920050286F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5DADDCC52864B76F00E17D07 /* ChartsUIView */,
 				5D5853722860E8C30050286F /* SmileAndPayStyle */,
 				5D58536E2860E7D70050286F /* Strings */,
 				5D58536D2860E77F0050286F /* FakeData */,
@@ -158,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				5D5853512860E5FD0050286F /* RecapViews.swift */,
+				5DADDCC82864B87100E17D07 /* PieChartSwiftUIView.swift */,
 			);
 			path = RecapViews;
 			sourceTree = "<group>";
@@ -229,6 +259,21 @@
 			path = SmileAndPayTests;
 			sourceTree = "<group>";
 		};
+		5DADDCBF2864B1BB00E17D07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DADDCC52864B76F00E17D07 /* ChartsUIView */ = {
+			isa = PBXGroup;
+			children = (
+				5DADDCC62864B78100E17D07 /* PieChartsView.swift */,
+			);
+			path = ChartsUIView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,12 +284,20 @@
 				5D5853092860C4930050286F /* Sources */,
 				5D58530A2860C4930050286F /* Frameworks */,
 				5D58530B2860C4930050286F /* Resources */,
+				5DADDCAF2864B09100E17D07 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "SmileAndPay (iOS)";
+			packageProductDependencies = (
+				5DADDCB42864B0D400E17D07 /* ComplexModule */,
+				5DADDCB62864B0D400E17D07 /* Numerics */,
+				5DADDCB82864B0D400E17D07 /* RealModule */,
+				5DADDCC02864B1BB00E17D07 /* Algorithms */,
+				5DADDCC32864B25E00E17D07 /* Charts */,
+			);
 			productName = "SmileAndPay (iOS)";
 			productReference = 5D58530D2860C4930050286F /* SmileAndPay.app */;
 			productType = "com.apple.product-type.application";
@@ -295,6 +348,11 @@
 				Base,
 			);
 			mainGroup = 5D5853002860C4910050286F;
+			packageReferences = (
+				5DADDCB02864B0C400E17D07 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				5DADDCB32864B0D400E17D07 /* XCRemoteSwiftPackageReference "swift-numerics" */,
+				5DADDCC22864B25E00E17D07 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 5D58530E2860C4930050286F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +396,8 @@
 				5D5853672860E6C40050286F /* MainViewModel.swift in Sources */,
 				5D5853602860E67A0050286F /* TransactionRowView.swift in Sources */,
 				5D58532E2860C4930050286F /* SmileAndPayApp.swift in Sources */,
+				5DADDCC72864B78100E17D07 /* PieChartsView.swift in Sources */,
+				5DADDCC92864B87100E17D07 /* PieChartSwiftUIView.swift in Sources */,
 				5D5853562860E6230050286F /* TransactionsView.swift in Sources */,
 				5D5853772860FAC40050286F /* TransactionFIltersButton.swift in Sources */,
 				5D58536B2860E6FA0050286F /* MenuView.swift in Sources */,
@@ -603,6 +663,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DADDCB02864B0C400E17D07 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		5DADDCB32864B0D400E17D07 /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		5DADDCC22864B25E00E17D07 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DADDCB42864B0D400E17D07 /* ComplexModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DADDCB32864B0D400E17D07 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = ComplexModule;
+		};
+		5DADDCB62864B0D400E17D07 /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DADDCB32864B0D400E17D07 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+		5DADDCB82864B0D400E17D07 /* RealModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DADDCB32864B0D400E17D07 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = RealModule;
+		};
+		5DADDCC02864B1BB00E17D07 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DADDCB02864B0C400E17D07 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		5DADDCC32864B25E00E17D07 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DADDCC22864B25E00E17D07 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D5853012860C4910050286F /* Project object */;
 }

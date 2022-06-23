@@ -12,21 +12,12 @@ struct MenuView: View {
     
     var body: some View {
         VStack(spacing: 15) {
-            SmileAndPayButton(title: Strings.transactionsTitle) {
-                withAnimation {
-                    balancer = .transactions
-                }
-            }
-            SmileAndPayButton(title: Strings.recapTitle) {
-                withAnimation {
-                    balancer = .recapitulatif
-                }
-            }
+            Spacer()
+            Text("SMILE AND PAY")
+                .multilineTextAlignment(.center)
+                .font(.largeTitle)
+                .foregroundColor(.blue)
+            Spacer()
         }
-        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
-        .background(
-            Style.primaryBackgroundColor
-        )
-        .transition(.asymmetric(insertion: .move(edge: .top), removal: .move(edge: .top)))
     }
 }

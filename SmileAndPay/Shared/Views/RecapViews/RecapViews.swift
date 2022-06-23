@@ -9,14 +9,11 @@ import SwiftUI
 
 struct RecapView: View {
     let transactions: [Transaction]
-    let action: ()->Void
     
     var body: some View {
         VStack(spacing: 40) {
-            CustomNavBar(title: Strings.recapTitle) {
-                action()
-            }
-            .padding(.top, 35)
+            PCView(transactions: transactions, text: "\(getTotal(nil))")
+                .padding(.top, 30)
             VStack(alignment: .leading, spacing: 25) {
                 HStack {
                     Text("TOTAL CREDITS: ")
@@ -43,7 +40,7 @@ struct RecapView: View {
         )
         .font(.headline)
         .foregroundColor(.blue)
-        .transition(.move(edge: .bottom))
+        .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .trailing)))
     }
     
     private func getTotal(_ type: TypeTransaction?) -> String {

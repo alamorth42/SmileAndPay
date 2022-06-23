@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct TransactionDetailsView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var transaction: Transaction?
+    let actionBack: ()->Void
     let delete: ()->Void
     
     var body: some View {
         if transaction != nil {
             VStack {
+                CustomNavBar(title: "DETAILS") {
+                    self.presentationMode.wrappedValue.dismiss()
+                    actionBack()
+                }
+                .padding()
                 VStack(alignment: .leading, spacing: 15) {
                     HStack(spacing: 10) {
                         Text("ID : ")
@@ -61,6 +68,7 @@ struct TransactionDetailsView: View {
                     delete()
                 }
             }
+            .navigationBarHidden(true)
         }
     }
 }
